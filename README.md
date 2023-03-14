@@ -22,20 +22,28 @@ For this tutorial you will need:
 Next, I will demonstrate how to install mlflow to your dedicated virtual environment. For this I will use Mac OS, but you can do the same steps on both Windows and Mac OS.
 
 ## Step 1. Prepare you Python Virtual environment
+
 With this step we will create dedicated virtual environment to perform the whole example in this repo. Do the following steps.
-•	Create a new conda virtual environment in you working directory with the following command in your terminal:
-conda create --name deploy_ml python=3.6
+
+*	Create a new conda virtual environment in you working directory with the following command in your terminal:
+
+* conda create --name deploy_ml python=3.6
+
 With this command you will create a new conda based virtual environment on your local machine.
-•	Once your virtual environment is sucessfully create, you can easily to activate it with the following command:
+
+* Once your virtual environment is sucessfully create, you can easily to activate it with the following command:
 conda activate deploy_ml
 At this moment we are having an almost empty virtual environment which is ready to be filled with new dependencies.
-Step 2. Install dependencies in you virtual environment
-•	Install mlflow package into our virtual environment with the following command:
+
+### Step 2. Install dependencies in you virtual environment
+
+*	Install mlflow package into our virtual environment with the following command:
 pip install -q mlflow==1.18.0.
+
 At the moment of preparing this repo, the version of mlfflow is mlflow==1.18.0.
-•	To run properly the ML model itself we have to install following modules and packages to our virtual environment as well:
-o	Pandas: pip install pandas.
-o	Scikit-learn: pip install -U scikit-learn.
-o	AWS Command Line Interface (AWS CLI): pip install awscli --upgrade --user.
-o	Boto3: pip install boto3
+*	To run properly the ML model itself we have to install following modules and packages to our virtual environment as well:
+*	Pandas: pip install pandas.
+*	Scikit-learn: pip install -U scikit-learn.
+*	AWS Command Line Interface (AWS CLI): pip install awscli --upgrade --user.
+*	Boto3: pip install boto3
 
