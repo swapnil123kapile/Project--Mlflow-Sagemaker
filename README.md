@@ -50,24 +50,41 @@ At the moment of preparing this repo, the version of mlfflow is mlflow==1.18.0.
 ### Step 3. Setup AWS IAM User and AWS CLI configuration
 
 *	**Create a new AWS AIM User**
+	
 o	Open **Identity and Access management (IAM) dashboard.**
-o	Click on __Users.__
-o	Click __Add users__ on the right side of the screenshot.
-o	Set the User name and mark Programmatic access tick below.
-o	Click on **Create group** as the part of Add user to group option.
-o	Type a group name you want to assign to your IAM User.
-o	From the list below select following policies:
-*	__AmazonSageMakerFullAccess.
-*	AmazonEC2ContainerRegistryFullAccess.__
-*	....
-o	Click on Create group, then the current Policies window will be closed.
-o	Click on Next: Tags.
-o	Click on Next: Review.
-o	Click on Create user.
-o	You will get a notification about sucessfully created new User on AWS IAM, see the screenshot below.  
 
-Important. Keep safe you credentials on your own notes. This step is only one occasion you see AWS Secret Access Key. Rewrite it carefully.
-•	Setup AWS CLI configuration
+o	Click on __Users.__
+
+o	Click __Add users__ on the right side of the screenshot.
+
+o	Set the User name and mark Programmatic access tick below.
+
+o	Click on **Create group** as the part of Add user to group option.
+
+o	Type a group name you want to assign to your IAM User.
+
+o	From the list below select following policies:
+
+        *	__AmazonSageMakerFullAccess.__
+        *	__AmazonEC2ContainerRegistryFullAccess.__
+        *	__AmazonLambdaFunctionBasicExecutionPolicy__
+        
+o	Click on Create group, then the current Policies window will be closed.
+
+o	Click on Next: Tags.
+
+o	Click on Next: Review
+.
+o	Click on Create user.
+
+o	You will get a notification about sucessfully created new User on AWS IAM, see the screenshot below.
+
+<img src="https://user-images.githubusercontent.com/117730243/225217942-fe956e14-014c-4575-bc1e-bc37934af1f5.png">
+
+
+**Important.** Keep safe you credentials on your own notes. This step is only one occasion you see AWS Secret Access Key. Rewrite it carefully.
+
+**•	Setup AWS CLI configuration
 o	Be sure you have installed AWS CLI and type command in your terminal: aws configure.
 o	Then you will have to enter your own credentials as follows:
 	AWS Access Key ID: go to IAM, then Users, and click on your user just created. Select Security credentials tab and copy the value of AWS Access Key ID
