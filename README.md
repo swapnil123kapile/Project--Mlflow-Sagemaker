@@ -160,11 +160,15 @@ Once we finished the latest step in this tutorial, mlflow is able to track desir
 *      From the second terminal window, simply run the model training code train.py with the command in your terminal: python train.py.
       
 *	Once the train script executed sucessfully, you will be notificated about creation of new experiment in mlflow, calculated MSE, absolute directory path to model artifacts, and runID, see the screenshot below.
+	
 	<img src="https://user-images.githubusercontent.com/117730243/225222680-9107e38c-e2e0-49ad-8da9-eb94b937c6fc.png>
 
 •	Open the browser window again where mlflow service is running on. Refresh the browser window. Then, on the left menu Experiments you will see updated list of experiments ran so far, which includes that one you ran recently in this step (my_classification_model), see the screenshot below.
 <html>	
+<body>	
 <img src="https://user-images.githubusercontent.com/117730243/225222882-93fcd5d1-abc6-499c-8e9b-c8a89eca0989.png>
+</body>
+</html>
 
 <a href="https://user-images.githubusercontent.com/117730243/225222882-93fcd5d1-abc6-499c-8e9b-c8a89eca0989.png> </a>
  </html>
