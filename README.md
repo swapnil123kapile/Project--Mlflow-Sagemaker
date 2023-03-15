@@ -164,12 +164,12 @@ Once we finished the latest step in this tutorial, mlflow is able to track desir
 
 •	Open the browser window again where mlflow service is running on. Refresh the browser window. Then, on the left menu Experiments you will see updated list of experiments ran so far, which includes that one you ran recently in this step (my_classification_model), see the screenshot below.
 <img src="https://user-images.githubusercontent.com/117730243/225222882-93fcd5d1-abc6-499c-8e9b-c8a89eca0989.png>
-	
+	<a href="https://user-images.githubusercontent.com/117730243/225222882-93fcd5d1-abc6-499c-8e9b-c8a89eca0989.png> </a>
  
 *	Click on the new experiment, and freely navigate through available options to check metric values and other parameters from the experiment.
 	
 *	Once you entered to your new experiment space, click on the most recent run tagged with Random Forest Experiment Run time tag. Be sure, that on the Artifacts section you are seeing this kind of structured experiment files with filled content for each file. See screenshot below.
-	<img src="https://user-images.githubusercontent.com/117730243/225223148-fc975551-f802-47f7-ac30-e455695596ee.png">
+<img src="https://user-images.githubusercontent.com/117730243/225223148-fc975551-f802-47f7-ac30-e455695596ee.png">
 Among the artifact files, there is a conda.yaml file. This is the environment your model needs to run, and it can be heavily customized based on your needs.
 
 *	Also, check the file structure in you Finder (Mac OS), or in Windows explorer (Windows OS). You should see new folder mlruns created in your project directory with run numbers folder(0, 1, and so on), runID folder, and full set of artifacts inside. See the screenshot below.
