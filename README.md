@@ -65,11 +65,11 @@ o	Type a group name you want to assign to your IAM User.
 
 o	From the list below select following policies:
 
-    ** AmazonSageMakerFullAccess. **
+ * **AmazonSageMakerFullAccess.**
     
-   **AmazonEC2ContainerRegistryFullAccess.**
+ *  **AmazonEC2ContainerRegistryFullAccess.**
     
-   **AmazonLambdaFunctionBasicExecutionPolicy**
+ *  **AmazonLambdaFunctionBasicExecutionPolicy**
         
 o	Click on Create group, then the current Policies window will be closed.
 
